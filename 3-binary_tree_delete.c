@@ -10,8 +10,10 @@ void binary_tree_delete(binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return;
-	binary_tree_delete(binary_tree_t->left);
-	binary_tree_delete(binary_tree_t->right);
-	printf("\n Deleting node: %d", binary_tree_t->data);
+
+	binary_tree_delete(tree->left);
+	binary_tree_delete(tree->right);
+	printf("\n Deleting node: %d", tree->n);
+
 	free(tree);
 }
